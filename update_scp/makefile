@@ -11,7 +11,6 @@ objects = update_scp.o 		\
 edit:$(objects)
 	gcc $(INCLUDE) -o  update_scp $(objects)
 	rm -rf $(objects)
-	@cp -v update_scp ../../../../../tools/pack/pctools/linux/mod_update/update_scp
 
 clean:
 	rm -rf update_scp $(objects)

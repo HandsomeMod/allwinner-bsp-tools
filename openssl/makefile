@@ -57,28 +57,24 @@ all: $(ALL-y)
 
 $(obj)req:  $(LIBS) $(REQ_MAIN)
 	$(CC) $(LIBS) $(REQ_MAIN) $(PLATFORM_LIBS) $(LDFLAGS) -o req
-	@cp -v req $(TOPDIR)/../../../../../tools/pack/pctools/linux/openssl/req
 
 $(REQ_MAIN):
 	@$(MAKE) -C $(dir $(subst $(obj),,$@))
 
 $(obj)x509: $(LIBS) $(X509_MAIN)
 	$(CC) $(LIBS) $(X509_MAIN) $(PLATFORM_LIBS) $(LDFLAGS) -o x509
-	@cp -v x509 $(TOPDIR)/../../../tools/pack/pctools/linux/openssl/x509
 
 $(X509_MAIN):
 	@$(MAKE) -C $(dir $(subst $(obj),,$@))
 
 $(obj)genrsa: $(LIBS) $(GENRSA_MAIN)
 	$(CC) $(LIBS) $(GENRSA_MAIN) $(PLATFORM_LIBS) $(LDFLAGS) -o genrsa
-	@cp -v genrsa $(TOPDIR)/../../../tools/pack/pctools/linux/openssl/genrsa
 
 $(GENRSA_MAIN):
 	@$(MAKE) -C $(dir $(subst $(obj),,$@))
 
 $(obj)rsa: $(LIBS) $(RSA_MAIN)
 	$(CC) $(LIBS) $(RSA_MAIN) $(PLATFORM_LIBS) $(LDFLAGS) -o rsa
-	@cp -v rsa $(TOPDIR)/../../../tools/pack/pctools/linux/openssl/rsa
 
 $(RSA_MAIN):
 	@$(MAKE) -C $(dir $(subst $(obj),,$@))

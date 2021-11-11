@@ -55,7 +55,6 @@ all: $(ALL-y)
 
 $(obj)update_uboot_v2:  $(LIBS)
 	$(CC) $(LIBS) $(LDFLAGS) $(PLATFORM_LIBS) -o update_uboot_v2
-	@cp -v update_uboot_v2 $(TOPDIR)/../../../../../tools/pack/pctools/linux/mod_update/update_uboot_v2
 
 $(LIBS):
 	@$(MAKE) -C $(dir $(subst $(obj),,$@))

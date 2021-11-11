@@ -62,7 +62,6 @@ all: $(ALL-y)
 
 $(obj)dragonsecboot:  $(LIBS)
 	$(CC) $(LIBS) $(LDFLAGS) $(PLATFORM_LIBS) -static -o dragonsecboot
-	@cp -v dragonsecboot $(TOPDIR)/../../../../../tools/pack/pctools/linux/openssl/dragonsecboot
 
 $(LIBS):
 	@$(MAKE) -C $(dir $(subst $(obj),,$@))

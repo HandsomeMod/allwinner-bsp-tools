@@ -11,7 +11,6 @@ objects = update_optee.o 		\
 edit:$(objects)
 	gcc $(INCLUDE) -o  update_optee $(objects)
 	rm -rf $(objects)
-	@cp -v update_optee ../../../../../tools/pack/pctools/linux/mod_update/update_optee
 
 clean:
 	rm -rf update_optee $(objects)

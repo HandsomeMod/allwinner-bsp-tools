@@ -55,7 +55,6 @@ all: $(ALL-y)
 
 $(obj)dragonsecboot:  $(LIBS)
 	$(CC) $(LIBS) $(LDFLAGS) $(PLATFORM_LIBS) -static -o fastdtb
-	@cp -v fastdtb $(TOPDIR)/../../../../../tools/pack/pctools/linux/mod_update/fastdtb
 
 $(LIBS):
 	@$(MAKE) -C $(dir $(subst $(obj),,$@))

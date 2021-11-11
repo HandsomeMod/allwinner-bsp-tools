@@ -55,7 +55,6 @@ all: $(ALL-y)
 
 $(obj)imgdecode:  $(LIBS)
 	$(CC) $(LIBS) $(LDFLAGS) $(PLATFORM_LIBS) -o imgdecode
-	@cp -v imgdecode $(TOPDIR)/../../../../../tools/pack/pctools/linux/mod_update/imgdecode
 
 $(LIBS):
 	@$(MAKE) -C $(dir $(subst $(obj),,$@))
