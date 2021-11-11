@@ -9,3 +9,4 @@ edit:$(objects)
 
 clean:
 	rm -rf update_fdt $(objects)
+	rm -rf update_uboot_fdt

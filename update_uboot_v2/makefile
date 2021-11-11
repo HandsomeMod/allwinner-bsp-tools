@@ -68,5 +68,6 @@ clean:
 		   -name '*.o'	    -o  \
 		   -name '*.exe'	\) -print \
 		| xargs rm -f
+	@rm -rf update_uboot_v2
 
 # DO NOT DELETE THIS LINE -- make depend depends on it.

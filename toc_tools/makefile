@@ -75,5 +75,6 @@ clean:
 		   -name '*.o'	    -o  \
 		   -name '*.exe'	\) -print \
 		| xargs rm -f
+	@rm -rf dragonsecboot
 
 # DO NOT DELETE THIS LINE -- make depend depends on it.

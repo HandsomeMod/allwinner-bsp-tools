@@ -10,3 +10,4 @@ edit:$(objects)
 
 clean:
 	rm -rf genchecksum_uboot $(objects)
+	rm -rf add_hash
