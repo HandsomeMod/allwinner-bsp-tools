@@ -9,6 +9,7 @@ all:
 	make -C parser_img
 	make -C openssl_signature
 	make -C script
+	make -C dtc
 	make -C dtb_fast
 	make -C update_config_to_img
 	make -C update_scp
@@ -36,6 +37,7 @@ clean:
 	make -C parser_img clean
 	make -C openssl_signature clean
 	make -C script clean
+	make -C dtc clean
 	make -C dtb_fast clean
 	make -C update_config_to_img clean
 	make -C update_scp clean
